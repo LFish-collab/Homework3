@@ -136,8 +136,9 @@ def test_function(population1,population2,population3):
 #print("The Z-Score of the mean of population1 is", mean_score_p1)
 #print("The Z-Score of the mean of population2 is", mean_score_p2)
 #print("The Z-Score of the mean of population3 is", mean_score_p3)
-
+# I used this to go ahead and test out the z score function with another function 
 
 #print(z_score(14,mean(population1),stdev(population1,mean(population1))))
 #print(z_score(-16,mean(population2),stdev(population2,mean(population2))))
 #print(z_score(125,mean(population3),stdev(population3,mean(population3))))
+# I used this just as a means of testing the function as well 
