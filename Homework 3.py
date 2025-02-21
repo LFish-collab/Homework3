@@ -115,6 +115,18 @@ def z_score(x, mu, sigma):
 
     return z # Place the calculated z-score result between the return statement and this comment so it will be returned by the z_score function
 
+# This code gives entire z-score list for all the data sets to cross check test tables in Excel
+p1_scores = [z_score(x, mean(population1),stdev(population1, mean(population1))) for x in population1]
+p2_scores = [z_score(x, mean(population2),stdev(population2, mean(population2))) for x in population2]
+p3_scores = [z_score(x, mean(population3),stdev(population3, mean(population3))) for x in population3]
+
+print("P1-score:", p1_scores)
+
+print("P2-score:", p2_scores)
+
+print("P3-score:", p3_scores)
+
+# This test function was used to check indiviual z-scores
 def test_function(population1,population2,population3):
     pop1_avg = mean(population1)
     pop1_max = greatest(population1)
@@ -140,9 +152,8 @@ def test_function(population1,population2,population3):
 #print("The Z-Score of the mean of population1 is", mean_score_p1)
 #print("The Z-Score of the mean of population2 is", mean_score_p2)
 #print("The Z-Score of the mean of population3 is", mean_score_p3)
-# I used this to go ahead and test out the z score function with another function 
 
 #print(z_score(14,mean(population1),stdev(population1,mean(population1))))
 #print(z_score(-16,mean(population2),stdev(population2,mean(population2))))
 #print(z_score(125,mean(population3),stdev(population3,mean(population3))))
-# I used this just as a means of testing the function as well 
+# I used this just as a means of testing the z-score function as well 
