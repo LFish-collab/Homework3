@@ -107,8 +107,8 @@ def z_score(x, mu, sigma):
     
     # Participating group member names go in this comment 
     # Logan Fish
-    # 
-    #              
+    # Arianna Flores
+    # Ben Kanaras
 
     # Your code goes between this comment and the return statement
     z = (x - mu) / sigma
