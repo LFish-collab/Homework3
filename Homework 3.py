@@ -105,11 +105,15 @@ def z_score(x, mu, sigma):
     Returns the z-score of x
     """
     
-    # Participating group member names go in this comment              
+    # Participating group member names go in this comment 
+    # Logan Fish
+    # 
+    #              
 
     # Your code goes between this comment and the return statement
+    z = (x - mu) / sigma
 
-    return (x - mu) / sigma # Place the calculated z-score result between the return statement and this comment so it will be returned by the z_score function
+    return z # Place the calculated z-score result between the return statement and this comment so it will be returned by the z_score function
 
 def test_function(population1,population2,population3):
     pop1_avg = mean(population1)
